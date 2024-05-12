@@ -159,7 +159,7 @@ class home extends StatelessWidget {
                     color: Colors.grey[700],
                   ),
                 ),
-                SizedBox(width: 50), // Adjust the width as per your requirement
+                SizedBox(width: 50),
                 Text(
                   'Maximum',
                   style: TextStyle(
