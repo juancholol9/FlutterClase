@@ -6,8 +6,16 @@ void main() => runApp(MaterialApp(
   home: NinjaCard(),
 ));
 
-class NinjaCard extends StatelessWidget {
+class NinjaCard extends StatefulWidget {
   const NinjaCard({super.key});
+
+  @override
+  State<NinjaCard> createState() => _NinjaCardState();
+}
+
+class _NinjaCardState extends State<NinjaCard> {
+
+  int ninjaLevel = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +33,16 @@ class NinjaCard extends StatelessWidget {
         elevation: 0.0,
         ),
 
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            setState(() {
+              ninjaLevel += 1;
+            });
+          },
+          backgroundColor: Colors.grey[800],
+          child: Icon(Icons.add),
+        ),
+
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
@@ -32,6 +50,20 @@ class NinjaCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
+
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/Foto.png'),
+                radius: 40.0,
+              ),
+            ),
+
+            SizedBox(height: 10.0,),
+
+            Divider(
+              height: 70.0,
+              color: Colors.grey[600],
+            ),
 
             Text(
               'NAME',
@@ -66,7 +98,7 @@ class NinjaCard extends StatelessWidget {
             SizedBox(height: 10.0,),
 
             Text(
-              '8',
+              '$ninjaLevel',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 letterSpacing: 2.0,
@@ -77,8 +109,34 @@ class NinjaCard extends StatelessWidget {
 
             SizedBox(height: 30.0,),
 
+            Row(
+
+              children: [
+
+                Icon(
+                  Icons.email,
+                  color: Colors.white
+                ),
+
+                SizedBox(width: 10.0),
+
+                Text(
+                  "juanramonmejiapadilla@gmail.com",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15.0,
+                    letterSpacing: 1.0
+                    ),
+                )
+
+              ]
+
+            )
+
           ],
+
         ),
+
       ),
 
     );

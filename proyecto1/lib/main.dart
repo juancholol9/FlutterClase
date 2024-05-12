@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:menudrawer_app/widgets/home.dart';
+import 'package:proyecto1/widgets/home.dart';
 
 
 void main() => runApp(const MyApp());
@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return const MaterialApp(
-      title: 'Menu Drawer App',
+      title: 'Flutter Demo',
       home: MyHomePage(),
-    )
+    );
   }
 }
