@@ -27,6 +27,8 @@ class _HomeState extends State<Home> {
       setState(() {
         articles = data['articles'];
       });
+
+      print(articles);
     } catch (e) {
       print('No se pudo conectar a la api. Error: $e');
     }
@@ -44,7 +46,7 @@ class _HomeState extends State<Home> {
         backgroundImage: NetworkImage(url),
       );
     } else {
-      // If URL is null, return a default placeholder image
+
       return CircleAvatar(
         backgroundImage: AssetImage('path_to_placeholder_image'),
       );

@@ -1,5 +1,7 @@
 // import 'dart:js_util';
 
+// ignore_for_file: prefer_const_constructors, use_super_parameters
+
 import 'package:flutter/material.dart';
 import 'quote.dart';
 import 'quote_card.dart';

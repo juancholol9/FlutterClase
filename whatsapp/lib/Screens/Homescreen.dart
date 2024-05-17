@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, file_names
 
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,6 @@ class _HomescreenState extends State<Homescreen> with SingleTickerProviderStateM
   late TabController _controller;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _controller = TabController(length: 4, vsync: this, initialIndex: 1);
   }
