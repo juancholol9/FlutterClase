@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44536573565",
+    "project_id": "mimos-1f21a",
+    "storage_bucket": "mimos-1f21a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44536573565:android:7ff32a7c4637187d39cb14",
+        "android_client_info": {
+          "package_name": "com.example.mimos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsZjuaB_JeVsBPCiEtMXLr1mZSuy6ERos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44536573565:android:d8d317564e5a1abe39cb14",
+        "android_client_info": {
+          "package_name": "com.example.mimos_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsZjuaB_JeVsBPCiEtMXLr1mZSuy6ERos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
